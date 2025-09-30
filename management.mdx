@@ -1,41 +1,48 @@
-Managing Users, Courses, and Paths
-The Management tab is your central command center for all content and user administration.
+---
+title: "Managing Users, Courses, and Paths"
+description: "The Management tab is your command center for all content and user administration [cite: ManagementTab.js]."
+---
 
-Manage Employees
-This section allows you to control user accounts.
+### Manage Employees
 
-Create New Employee: Fill out the form with the user's name, email, and a temporary password. Check the "Is Admin?" box to grant them administrative privileges.
+This section allows you to control all user accounts.
 
-Edit an Employee: Click the "Edit" button next to a user's name. A window will appear allowing you to change their name and admin status.
+#### Create New Employee
 
-Reset Password: Click the "Password" button to send a password reset email directly to the user.
+1. Fill out the form with the user's **Name**, **Email**, and a temporary **Password**.
+2. Check the **"Is Admin?"** box to grant them administrative privileges.
+3. Click the **"Create Employee"** button to finalize the account [cite: `ManagementTab.js`].
 
-Clear Course Data: From the "Edit" window, you can click "Clear All Course Data". This is a permanent action that deletes all of a user's progress and activity logs, requiring confirmation.
+#### Edit an Employee
 
-Manage Courses & Certification Paths
-Here you can create and organize your learning content.
+1. Click the **"Edit"** button next to a user's name in the list.
+2. A window will appear where you can change their name and toggle their admin status [cite: `EditUserModal.js`].
+3. Click **"Save Changes"** to confirm.
 
-Create a New Course: Fill in the "Course Title" and "Level" and click "Create Course". You can add questions later by editing the course.
+#### Additional Employee Actions
 
-Create a New Certification Path: Fill in the "Path Name," "Year," and a "Font Awesome Icon". Select the checkboxes next to the courses that are required to complete this path.
+- **Reset Password**: Click the **"Password"** button next to a user to send a password reset email directly to them [cite: `ManagementTab.js`].
+- **Clear Course Data**: From the "Edit" window, click the red **"Clear All Course Data"** button. This is a **permanent action** that deletes all of a user's progress and requires confirmation before proceeding [cite: `EditUserModal.js`, `ConfirmClearDataModal.js`].
 
-Edit a Course: Clicking "Edit" on a course opens a detailed modal where you can:
+### Manage Courses & Certification Paths
 
-Change the title, level, and the number of questions in the quiz.
+Here you can create and organize all of your learning content.
 
-Add, edit, or delete questions and their multiple-choice options.
+#### Courses
 
-Set the correct answer for each question using the radio buttons.
+- **Create**: Fill in the **"Course Title"** and **"Level"** and click **"Create Course"** [cite: `ManagementTab.js`]. Questions are added by editing the course.
+- **Edit**: Clicking **"Edit"** on a course opens a detailed modal where you can change the title, level, and quiz length, as well as add, edit, or delete the questions and answers within that course [cite: `EditCourseModal.js`].
+- **Archive/Delete**: Click **"Archive"** to temporarily disable a course or **"Delete"** to permanently remove it [cite: `ManagementTab.js`].
 
-Archive/Delete: You can temporarily disable content by clicking "Archive" or permanently remove it by clicking "Delete".
+#### Certification Paths
 
-Assign & Remove Courses/Paths
-This tool allows you to assign content to multiple users at once.
+- **Create**: Fill in the **"Path Name," "Year,"** and a **"Font Awesome Icon"**. Then, select the checkboxes next to the courses that are required to complete this path [cite: `ManagementTab.js`].
+- **Edit**: Click **"Edit"** on a path to open a modal where you can update its name, icon, and the list of required courses [cite: `EditTrackModal.js`].
 
-Select a Target: Choose a single Course or an entire Certification Path from the dropdown menu.
+### Assign & Remove Courses/Paths
 
-Select Employees: Check the boxes next to the employees you want to assign the content to. You can also use the "Select All" and "Unselect All" buttons for convenience.
+This tool allows you to assign content to multiple users at once in three simple steps.
 
-Set Due Date: Choose a required completion date for the assignment.
-
-Assign: Click the "Assign" button to finalize the process.
+1. **Select a Target**: Choose a single Course or an entire Certification Path from the first dropdown menu.
+2. **Select Employees**: Check the boxes next to the employees you want to assign the content to. Use the **"Select All"** and **"Unselect All"** buttons for convenience.
+3. **Set Due Date & Assign**: Choose a required completion date and click the **"Assign"** button to finalize [cite: `ManagementTab.js`].
