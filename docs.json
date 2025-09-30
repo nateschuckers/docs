@@ -36,8 +36,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/AndarLight.svg",
-    "dark": "/logo/AndarDark.svg"
+    "light": "/logo/AndarLight.png",
+    "dark": "/logo/AndarDark.png"
   },
   "navbar": {
     "links": [
