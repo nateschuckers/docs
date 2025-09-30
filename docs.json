@@ -4,8 +4,8 @@
   "name": "Andar Certification",
   "colors": {
     "primary": "#0062ff",
-    "light": "#1c2bc9",
-    "dark": "#63bcff"
+    "light": "#7cadfc",
+    "dark": "#0243ab"
   },
   "favicon": "/favicon.svg",
   "navigation": {
