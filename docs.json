@@ -36,14 +36,14 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/AndarLight.svg",
+    "dark": "/logo/AndarDark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:nate.schuckers@andarsoftware.com"
       }
     ],
     "primary": {
